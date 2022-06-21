@@ -130,7 +130,7 @@ function App() {
                 <Form.Select required onChange={(event) => {
                   setOum(event.target.value);
                 }}>
-                  <option>Select Oum</option>
+                  <option selected disabled value="">Select Oum</option>
                   <option>SHEET</option>
                   <option>ROOL</option>
                   <option>PCS</option>
@@ -167,7 +167,7 @@ function App() {
           </Modal.Footer>
         </Modal>
 
-         <Modal show={showEdit} onHide={handleCloseAdd}>
+         <Modal show={showEdit} onHide={handleCloseEdit}>
           <Modal.Header closeButton>
             <Modal.Title>Edit Product</Modal.Title>
           </Modal.Header>
@@ -198,7 +198,6 @@ function App() {
                 <Form.Select required value={oum} onChange={(event) => {
                   setOum(event.target.value);
                 }}>
-                  <option>Select Oum</option>
                   <option>SHEET</option>
                   <option>ROOL</option>
                   <option>PCS</option>
